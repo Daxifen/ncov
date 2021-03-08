@@ -4,7 +4,7 @@
 
 > 使用时注意, fork之后应该在settings-secrets中填写对应的帐号与密码, 并在.github/workflows/action.yml文件中加入对应账号密码.
 
-## 注意
+## 注意 
 本脚本内置了南校区和北校区的经纬度,**默认定位为南校区**
 
 > 其他地区, 请提交Issue
