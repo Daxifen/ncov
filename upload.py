@@ -16,6 +16,7 @@ import random
 from datetime import datetime
 from apscheduler.schedulers.blocking import BlockingScheduler
 
+
 from utils import Utils
 
 class YiQingTong:
@@ -27,7 +28,7 @@ class YiQingTong:
         self.location = args.location
 
     ##############################
-    # Internal Methods #
+    # Internal Methods # 
     ##############################
     def _upload_use_cookie(self):
         cookie = Utils.load_cookie_from_file(self.cookie_file)
@@ -95,3 +96,4 @@ if __name__ == "__main__":
         print("晚检将会在每天{:0>2d}:{:0>2d}填报".format(night_hour,night_minute))
         scheduler.add_job(upload_task.upload, 'cron', hour=night_hour, minute=night_minute)
         scheduler.start()
+
