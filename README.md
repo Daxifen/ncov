@@ -64,7 +64,7 @@ python upload.py -u 学号 -p 密码 -l n -f 上报信息的文件路径
 python upload.py -c cookie路径 -f 上报信息的文件路径
 ```
 
-在不指定`-l`参数时默认上报南校区的GPS位置。
+在不指定`-l`参数时默认上报南校区的GPS位置。 
 
 如需指定北校区，请添加`-l n`(north)，即以下命令
 
